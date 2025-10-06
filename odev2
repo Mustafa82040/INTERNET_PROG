@@ -5,7 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sametin Çiftliği</title>
 <style>
+</style>
 
+<style>
+  input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    box-sizing: border-box;
+    background-color: lightblue;
+    border-bottom: 5px solid purple; 
+  } 
+
+  html, body { height: 100%; }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e900fe;
+    margin: 0; 
+  }
+  
+  .center-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+  }
+
+  
+  input:focus { 
+    background-color: yellow;
+    outline: none;
+  }    
+
+  table { border-collapse: collapse; margin: 0 auto; }
+  th, td { border: 1px solid #000; padding: 8px 12px; }
+  th { background: #eef; }
+  td, th { text-align: center; }
 </style>
 </head>
 <body>
@@ -13,7 +51,7 @@
 
 <main>
   <a href="https://tr.wikipedia.org/wiki/At">
-    <img  width="50" height="50"  src="fotoğraflar/fotoğraf.jpg.jpg" alt="at" title="at">
+    <img width="50" height="50" src="fotoğraflar/fotoğraf.jpg.jpg" alt="at" title="at">
   </a>
   <form>
     <table>
@@ -36,6 +74,55 @@
     <tr><td>Friesian</td><td>Gösteri ve turlar için ideal</td><td>400</td></tr>
   </table>
 </section>
+
+<style>
+  h1 { 
+    text-align: center; 
+    color: rgb(255, 196, 0); 
+    font-family: 'Arial Black', sans-serif; 
+    font-size: 48px;
+    text-shadow: 2px 2px 4px #000000; 
+  }
+</style>
+<h1>Mustafa Çiftliği</h1>
+<style>
+  h1 { text-align: center; color: rgb(255, 196, 0); }
+  tr { background-color: #55ff00; }
+  tr:nth-child(even) { background-color: #f2f2f2; }
+  tr,td { border: 2px solid black; }
+  table { border: 2px solid black; }  
+  th { background-color: #ffeb3b; }
+</style>
+
+<div class="center-page">
+  <table>
+    <tr>
+      <th>Ad</th>
+      <th>Soyad</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>Mustafa</td>
+      <td>Altunal</td>
+      <td>sadsad@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Ali</td>
+      <td>Veli</td>
+      <td>sdafs@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Ayşe</td>
+      <td>Fatma</td>
+      <td>aslfasf@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Ahmet</td>
+      <td>Mehmet</td>
+      <td>sdafjdjk@gmail.com</td>
+    </tr>
+  </table>
+</div>
 
 </body>
 </html>
