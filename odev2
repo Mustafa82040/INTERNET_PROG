@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sametin Çiftliği</title>
+<style>
+
+</style>
+</head>
+<body>
+<h1>Sametin Çiftliği</h1>
+
+<main>
+  <a href="https://tr.wikipedia.org/wiki/At">
+    <img  width="50" height="50"  src="fotoğraflar/fotoğraf.jpg.jpg" alt="at" title="at">
+  </a>
+  <form>
+    <table>
+        <tr><td>İsim:</td><td><input type="text" name="isim"></td></tr>
+        <tr><td>Soy İsim:</td><td><input type="text" name="soyisim"></td></tr>
+        <tr><td>E-mail:</td><td><input type="email" name="email"></td></tr>
+        <tr><td>Şifre:</td><td><input type="password" name="sifre"></td></tr>
+        <tr><td colspan="2" style="text-align:center"><input type="submit" value="Kaydet"></td></tr>
+    </table>
+  </form>
+</main>
+
+<section>
+  <h2 style="text-align:center">At Çeşitleri ve Saatlik Ücretler</h2>
+  <table>
+    <tr><th>At Türü</th><th>Özellik</th><th>Saatlik Ücret (₺)</th></tr>
+    <tr><td>Arap Atı</td><td>Hızlı ve çevik</td><td>300</td></tr>
+    <tr><td>İngiliz Atı</td><td>Dayanıklı ve güçlü</td><td>350</td></tr>
+    <tr><td>Pony</td><td>Çocuklar için uygun</td><td>200</td></tr>
+    <tr><td>Friesian</td><td>Gösteri ve turlar için ideal</td><td>400</td></tr>
+  </table>
+</section>
+
+</body>
+</html>
