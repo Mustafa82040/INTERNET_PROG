@@ -29,13 +29,13 @@ HTML ALIŞTIRMALARI
   <p class="gri">Dahili CSS ile renklendirilmiş metin.</p>
 
   -- BAĞLANTILAR VE DOSYA YOLLARI --
-  <p><a href="https://www.w3schools.com" title="W3Schools">Dış bağlantı</a></p>
+  <p><a href="https://www.wwww.www" title="Www">Dış bağlantı</a></p>
   <p><a href="sayfalar/ornek.html">Göreli yol örneği</a></p>
-  <p><a href="dosyalar/Benim%20Dosyam.html">URL kodlaması (boşluk)</a></p>
+  <p><a href="dosyalar/dosyam.html">URL kodlaması (boşluk)</a></p>
 
   -- GÖRÜNTÜLER --
   <p>Resim (alt metinli):</p>
-  <img class="responsive" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Logo" width="250">
+  <img class="responsive" src="https://www.www.www.jpg" alt="Logo" width="250">
 
   -- SAYFA BAŞLIĞI (head içinde title zaten var) --
 
@@ -65,16 +65,16 @@ HTML ALIŞTIRMALARI
     <dt>CSS</dt><dd>Görünüm</dd>
   </dl>
 
-  <!-- BLOK VE SATIR İÇİ / DIV / CLASS / ID -->
+  -- BLOK VE SATIR İÇİ / DIV / CLASS / ID --
   <div class="kutu">div (blok)</div>
   <span class="kutu">span (satır içi)</span>
   <div class="kutu" id="ozel">id ile seçilen kutu</div>
 
   -- IFRAME --
   <h3>iframe</h3>
-  <iframe src="https://www.example.com" title="Örnek" width="320" height="140"></iframe>
+  <iframe src="https://www.www.www" title="Örnek" width="320" height="140"></iframe>
 
-  -- JAVASCRIPT (çok basit) --
+  -- JAVASCRIPT --
   <h3>JavaScript</h3>
   <button onclick="alert('Merhaba')">Tıkla</button>
 
@@ -134,20 +134,20 @@ HTML ALIŞTIRMALARI
   -- MEDYA --
   <h3>Video</h3>
   <video width="260" controls>
-    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <source src="https://www.www.www.mp4" type="video/mp4">
   </video>
 
   <h3>Ses</h3>
   <audio controls>
-    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    <source src="https://www.www.www.mp3" type="audio/mpeg">
   </audio>
 
   <h3>Eklenti</h3>
-  <embed src="https://www.w3schools.com/images/w3schools_green.jpg" width="200" height="60">
+  <embed src="https://www.www.www.jpg" width="200" height="60">
 
   <h3>YouTube</h3>
   <iframe width="320" height="180"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          src="https://www.www.www"
           title="Video" allowfullscreen></iframe>
 
 </body>
