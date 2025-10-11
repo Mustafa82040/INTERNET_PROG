@@ -16,12 +16,12 @@ css odevleri
     #ozel { color: #0066cc; }
     .vurgulu { font-weight: bold; }
     p { margin: 6px 0; }
-    div p { color: #333; }            /* kombinator */
+    div p { color: #333; }          
     a[target="_blank"] { text-decoration: underline; } /* attr seçici */
-    a:hover { color: red; }           /* sözde sınıf */
+    a:hover { color: red; }           
     .ilkSatir::first-line { font-weight: bold; } /* sözde öğe */
 
-    * Renkler, Arka Plan, Kenarlık, Margin/Padding, Kutu Modeli *
+    * Renkler, Arka Plan *
     .kutu { border: 1px solid #000; padding: 8px; margin: 8px 0; }
     .arkaplan { background: #eef; }
     .kesik { border: 2px dashed #666; }
@@ -40,7 +40,7 @@ css odevleri
     .tablo { border-collapse: collapse; }
     .tablo th, .tablo td { border: 1px solid #000; padding: 4px; }
 
-    * Konum ve Z-Index, Taşma, Float, Inline-Block, Hizalama *
+    * Konum *
     .konteyner { position: relative; border: 1px solid #000; height: 70px; }
     .mutlak { position: absolute; left: 10px; top: 10px; background: #fcc; padding: 4px; }
     .katman1 { position: absolute; left: 20px; top: 20px; background: #cfe; z-index: 2; padding: 4px; }
@@ -50,7 +50,7 @@ css odevleri
     .ib { display: inline-block; width: 80px; border: 1px solid #000; text-align: center; }
     .orta { text-align: center; border: 1px solid #000; padding: 4px; }
 
-    * Opaklık, Basit Menü, Açılır Menü, Galeri *
+    * Opaklık *
     .opak { background: #06c; color: #fff; opacity: .6; padding: 8px; width: 120px; }
     nav a { margin-right: 8px; }
     .acil { position: relative; border: 1px solid #000; display: inline-block; padding: 6px; }
@@ -58,7 +58,7 @@ css odevleri
     .acil:hover .icerik { display: block; }
     .galeri img { width: 120px; margin: 4px; border: 1px solid #ccc; }
 
-    * Sprite, Form, Birimler, !important, calc, değişkenler *
+    * Form, Birimler *
     .sprite { width: 60px; height: 30px; border: 1px solid #000;
               background: url(https://www.w3schools.com/css/img_navsprites.gif) 0 0; }
     .yuzde { width: 50%; background: #eef; }
@@ -73,7 +73,7 @@ css odevleri
     .sol { flex: 1; background: #eef; padding: 8px; }
     .sag { flex: 2; background: #efe; padding: 8px; }
 
-    * Yuvarlak köşe, Arka plan degrade, Gölge, Geçiş, Dönüşüm, Animasyon *
+    * Yuvarlak köşe, Arka plan degrade vs *
     .yuvarlak { width: 120px; height: 40px; background: #ddd; border-radius: 8px; }
     .degrade { height: 60px; background: linear-gradient(#fff, #cdf); }
     .golge { width: 120px; height: 40px; background: #ddd; box-shadow: 2px 2px 4px #999; }
@@ -83,11 +83,11 @@ css odevleri
     @keyframes saga { from { left: 0; } to { left: 40px; } }
     .anim { position: relative; width: 40px; height: 20px; background: #6cf; animation: saga 1s infinite alternate; }
 
-    * Görüntü filtreleri, object-fit *
+    * Görüntü filtreleri, object *
     .filtre { width: 120px; filter: grayscale(100%); }
     .kapak { width: 180px; height: 120px; object-fit: cover; object-position: center; }
 
-    * Çoklu sütun, UI (resize), Kutu boyutlandırma *
+    * Çoklu sütun,Kutu boyutlandırma *
     .sutun { column-count: 2; }
     .ui { resize: both; overflow: auto; border: 1px solid #000; width: 150px; height: 60px; }
     .box { box-sizing: border-box; width: 150px; padding: 10px; border: 1px solid #000; }
@@ -137,7 +137,7 @@ css odevleri
     <div class="katman1">z-index</div>
   </div>
   <div class="tas">uzun uzun metin uzun uzun metin uzun uzun metin...</div>
-  <img class="sola" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="resim">
+  <img class="sola" src="https://www.www.www.jpg" alt="resim">
   <p>metin resmin yanında akar.</p>
   <div class="temizle"></div>
   <div class="ib">A</div><div class="ib">B</div>
@@ -150,22 +150,17 @@ css odevleri
     <div class="icerik"><a href="#">Öğe</a></div>
   </div>
   <div class="galeri">
-    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1">
-    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="2">
+    <img src="https://www.www.www/images.jpg" alt="1">
+    <img src="https://www.www.www/images.jpg" alt="2">
   </div>
 
-  <h2>Sprite / Form / Birimler / !important / calc / Değişken</h2>
+  <h2> Form / Birimler / calc / Değişken</h2>
   <div class="sprite"></div>
   <form><input type="text" placeholder="ad" style="padding:6px; border:1px solid #ccc"> <button class="btn">Gönder</button></form>
   <div class="yuzde">yüzde genişlik</div>
   <p class="rem onemli">önemli metin</p>
   <div class="calc">calc ile genişlik</div>
 
-  <h2>Esnek Düzen</h2>
-  <div class="flex">
-    <div class="sol">sol</div>
-    <div class="sag">sağ</div>
-  </div>
 
   <h2>Yuvarlak / Degrade / Gölge / Geçiş / Dönüşüm / Animasyon</h2>
   <div class="yuvarlak"></div>
@@ -176,8 +171,8 @@ css odevleri
   <div class="anim"></div>
 
   <h2>Görüntü Filtreleri ve Object-fit</h2>
-  <img class="filtre" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="filtre">
-  <img class="kapak" src="https://www.w3schools.com/howto/img_snow.jpg" alt="kapak">
+  <img class="filtre" src="https://www.www.www.jpg" alt="filtre">
+  <img class="kapak" src="https://www.www.www.jpg" alt="kapak">
 
   <h2>Çoklu Sütun, UI, Box-Sizing</h2>
   <div class="sutun">Metin Metin Metin Metin Metin Metin Metin Metin Metin Metin</div>
