@@ -1,0 +1,191 @@
+css odevleri
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Ödevim (Basit)</title>
+
+  <style>
+    * Temel *
+    body { font-family: Arial, sans-serif; line-height: 1.5; margin: 16px; }
+    h2 { margin-top: 24px; font-size: 18px; }
+
+    * Seçiciler *
+    #ozel { color: #0066cc; }
+    .vurgulu { font-weight: bold; }
+    p { margin: 6px 0; }
+    div p { color: #333; }            /* kombinator */
+    a[target="_blank"] { text-decoration: underline; } /* attr seçici */
+    a:hover { color: red; }           /* sözde sınıf */
+    .ilkSatir::first-line { font-weight: bold; } /* sözde öğe */
+
+    * Renkler, Arka Plan, Kenarlık, Margin/Padding, Kutu Modeli *
+    .kutu { border: 1px solid #000; padding: 8px; margin: 8px 0; }
+    .arkaplan { background: #eef; }
+    .kesik { border: 2px dashed #666; }
+    .anahat { outline: 2px solid #c00; outline-offset: 4px; }
+
+    * Boyutlar ve Görüntüleme *
+    .boyut { width: 150px; height: 50px; background: #ddd; }
+    .maks { max-width: 300px; background: #efe; }
+    .blok { display: block; border: 1px solid #000; padding: 4px; }
+
+    * Metin ve Yazı Tipleri *
+    .metin { text-align: center; text-transform: uppercase; letter-spacing: 1px; }
+    .yazi { font-family: Verdana, sans-serif; }
+
+    * Bağlantı, Liste, Tablo *
+    .tablo { border-collapse: collapse; }
+    .tablo th, .tablo td { border: 1px solid #000; padding: 4px; }
+
+    * Konum ve Z-Index, Taşma, Float, Inline-Block, Hizalama *
+    .konteyner { position: relative; border: 1px solid #000; height: 70px; }
+    .mutlak { position: absolute; left: 10px; top: 10px; background: #fcc; padding: 4px; }
+    .katman1 { position: absolute; left: 20px; top: 20px; background: #cfe; z-index: 2; padding: 4px; }
+    .tas { width: 140px; height: 40px; overflow: auto; border: 1px solid #000; }
+    .sola { float: left; width: 80px; margin: 6px; }
+    .temizle { clear: both; }
+    .ib { display: inline-block; width: 80px; border: 1px solid #000; text-align: center; }
+    .orta { text-align: center; border: 1px solid #000; padding: 4px; }
+
+    * Opaklık, Basit Menü, Açılır Menü, Galeri *
+    .opak { background: #06c; color: #fff; opacity: .6; padding: 8px; width: 120px; }
+    nav a { margin-right: 8px; }
+    .acil { position: relative; border: 1px solid #000; display: inline-block; padding: 6px; }
+    .icerik { display: none; position: absolute; background: #eee; padding: 6px; }
+    .acil:hover .icerik { display: block; }
+    .galeri img { width: 120px; margin: 4px; border: 1px solid #ccc; }
+
+    * Sprite, Form, Birimler, !important, calc, değişkenler *
+    .sprite { width: 60px; height: 30px; border: 1px solid #000;
+              background: url(https://www.w3schools.com/css/img_navsprites.gif) 0 0; }
+    .yuzde { width: 50%; background: #eef; }
+    .rem { font-size: 2rem; }
+    .onemli { color: gray !important; }
+    .calc { width: calc(100% - 40px); border: 1px solid #000; }
+    :root { --ana: #06c; }
+    .btn { background: var(--ana); color: #fff; padding: 6px; border: none; }
+
+    * Esnek düzen (web sitesi düzeni) *
+    .flex { display: flex; gap: 8px; }
+    .sol { flex: 1; background: #eef; padding: 8px; }
+    .sag { flex: 2; background: #efe; padding: 8px; }
+
+    * Yuvarlak köşe, Arka plan degrade, Gölge, Geçiş, Dönüşüm, Animasyon *
+    .yuvarlak { width: 120px; height: 40px; background: #ddd; border-radius: 8px; }
+    .degrade { height: 60px; background: linear-gradient(#fff, #cdf); }
+    .golge { width: 120px; height: 40px; background: #ddd; box-shadow: 2px 2px 4px #999; }
+    .gecis { transition: background .3s; display: inline-block; padding: 8px; border: 1px solid #000; }
+    .gecis:hover { background: #fc0; }
+    .donus { display: inline-block; padding: 8px; border: 1px solid #000; transform: rotate(5deg); }
+    @keyframes saga { from { left: 0; } to { left: 40px; } }
+    .anim { position: relative; width: 40px; height: 20px; background: #6cf; animation: saga 1s infinite alternate; }
+
+    * Görüntü filtreleri, object-fit *
+    .filtre { width: 120px; filter: grayscale(100%); }
+    .kapak { width: 180px; height: 120px; object-fit: cover; object-position: center; }
+
+    * Çoklu sütun, UI (resize), Kutu boyutlandırma *
+    .sutun { column-count: 2; }
+    .ui { resize: both; overflow: auto; border: 1px solid #000; width: 150px; height: 60px; }
+    .box { box-sizing: border-box; width: 150px; padding: 10px; border: 1px solid #000; }
+
+    * Medya sorgusu *
+    @media (max-width: 600px) {
+      .mq { background: #fee; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Ödevim</h1>
+
+  <h2>Seçiciler</h2>
+  <p id="ozel">id seçici</p>
+  <p class="vurgulu">class seçici</p>
+  <div><p>div içindeki p</p></div>
+  <p><a href="#" target="_blank">dış bağlantı</a></p>
+  <p class="ilkSatir">bu satırın ilk kısmı kalın görünür.</p>
+
+  <h2>Renk / Arka Plan / Kenarlık / Kutu Modeli</h2>
+  <div class="kutu arkaplan">arka planlı kutu</div>
+  <div class="kutu kesik">kesik kenarlık</div>
+  <p class="anahat">anahat örneği</p>
+
+  <h2>Boyut ve Görüntüleme</h2>
+  <div class="boyut"></div>
+  <div class="maks">maksimum genişlik</div>
+  <span class="blok">display: block</span>
+
+  <h2>Metin ve Yazı</h2>
+  <p class="metin">örnek metin</p>
+  <p class="yazi">yazı tipi örneği</p>
+
+  <h2>Bağlantı / Liste / Tablo</h2>
+  <p><a href="#">link</a></p>
+  <ul><li>madde</li><li>madde</li></ul>
+  <table class="tablo">
+    <tr><th>Ad</th><th>Yaş</th></tr>
+    <tr><td>Ada</td><td>20</td></tr>
+  </table>
+
+  <h2>Konum, Z-Index, Taşma, Float, Inline-Block, Hizalama</h2>
+  <div class="konteyner">
+    <div class="mutlak">mutlak</div>
+    <div class="katman1">z-index</div>
+  </div>
+  <div class="tas">uzun uzun metin uzun uzun metin uzun uzun metin...</div>
+  <img class="sola" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="resim">
+  <p>metin resmin yanında akar.</p>
+  <div class="temizle"></div>
+  <div class="ib">A</div><div class="ib">B</div>
+  <div class="orta">ortalanmış metin</div>
+
+  <h2>Opaklık / Menü / Açılır Menü / Galeri</h2>
+  <div class="opak">yarı saydam</div>
+  <nav><a href="#">Ana</a><a href="#">Hakkında</a></nav>
+  <div class="acil">Menü
+    <div class="icerik"><a href="#">Öğe</a></div>
+  </div>
+  <div class="galeri">
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1">
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="2">
+  </div>
+
+  <h2>Sprite / Form / Birimler / !important / calc / Değişken</h2>
+  <div class="sprite"></div>
+  <form><input type="text" placeholder="ad" style="padding:6px; border:1px solid #ccc"> <button class="btn">Gönder</button></form>
+  <div class="yuzde">yüzde genişlik</div>
+  <p class="rem onemli">önemli metin</p>
+  <div class="calc">calc ile genişlik</div>
+
+  <h2>Esnek Düzen</h2>
+  <div class="flex">
+    <div class="sol">sol</div>
+    <div class="sag">sağ</div>
+  </div>
+
+  <h2>Yuvarlak / Degrade / Gölge / Geçiş / Dönüşüm / Animasyon</h2>
+  <div class="yuvarlak"></div>
+  <div class="degrade"></div>
+  <div class="golge"></div>
+  <span class="gecis">üzerine gel</span>
+  <span class="donus">döndür</span>
+  <div class="anim"></div>
+
+  <h2>Görüntü Filtreleri ve Object-fit</h2>
+  <img class="filtre" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="filtre">
+  <img class="kapak" src="https://www.w3schools.com/howto/img_snow.jpg" alt="kapak">
+
+  <h2>Çoklu Sütun, UI, Box-Sizing</h2>
+  <div class="sutun">Metin Metin Metin Metin Metin Metin Metin Metin Metin Metin</div>
+  <div class="ui">Boyutlandırılabilir kutu</div>
+  <div class="box">Toplam genişlik 150px</div>
+
+  <h2>Medya Sorgusu</h2>
+  <div class="mq" style="border:1px solid #000; padding:6px;">Pencere 600px altına inince arka plan değişir.</div>
+
+</body>
+</html>
