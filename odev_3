@@ -1,0 +1,154 @@
+HTML ALIŞTIRMALARI
+
+  -- BAŞLIKLAR VE PARAGRAFLAR --
+  <h1>Başlık 1</h1>
+  <h2>Başlık 2</h2>
+  <p>Bu bir paragraf.</p>
+  <p>Satır atlamak için <br> br etiketi kullanılır.</p>
+  <hr>
+
+  -- STİLLER (inline) --
+  <p style="color: blue;">Mavi yazı (inline stil).</p>
+  <p style="background: yellow;">Sarı arka plan.</p>
+
+  -- ALINTILAR, YORUMLAR --
+  -- Bu bir HTML yorumu --
+  <blockquote>Uzun bir alıntı örneği.</blockquote>
+  <p>Kısa alıntı: <q>kısa söz</q></p>
+  <p><abbr title="HyperText Markup Language">HTML</abbr> kısaltması.</p>
+  <address>Adres: Ankara, Türkiye</address>
+  <p><cite>Bir Kitap</cite> adı.</p>
+  <p><bdo dir="rtl">Ters akış örneği</bdo></p>
+
+  -- RENKLER --
+  <p style="color: red;">Kırmızı</p>
+  <p style="color: #0066cc;">Hex renk örneği</p>
+
+  -- CSS (dahili) --
+  <style> .gri { color: #333; } </style>
+  <p class="gri">Dahili CSS ile renklendirilmiş metin.</p>
+
+  -- BAĞLANTILAR VE DOSYA YOLLARI --
+  <p><a href="https://www.w3schools.com" title="W3Schools">Dış bağlantı</a></p>
+  <p><a href="sayfalar/ornek.html">Göreli yol örneği</a></p>
+  <p><a href="dosyalar/Benim%20Dosyam.html">URL kodlaması (boşluk)</a></p>
+
+  -- GÖRÜNTÜLER --
+  <p>Resim (alt metinli):</p>
+  <img class="responsive" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Logo" width="250">
+
+  -- SAYFA BAŞLIĞI (head içinde title zaten var) --
+
+  -- TABLOLAR --
+  <h3>Basit Tablo</h3>
+  <table>
+    <caption>Örnek Tablo</caption>
+    <tr><th>Ad</th><th>Yaş</th></tr>
+    <tr><td>Ada</td><td>20</td></tr>
+    <tr><td>Yiğit</td><td>22</td></tr>
+  </table>
+
+  <!-- LİSTELER -->
+  <h3>Listeler</h3>
+  <ul>
+    <li>Elma</li>
+    <li>Armut</li>
+    <li>Muz</li>
+  </ul>
+  <ol>
+    <li>Bir</li>
+    <li>İki</li>
+    <li>Üç</li>
+  </ol>
+  <dl>
+    <dt>HTML</dt><dd>Yapı</dd>
+    <dt>CSS</dt><dd>Görünüm</dd>
+  </dl>
+
+  <!-- BLOK VE SATIR İÇİ / DIV / CLASS / ID -->
+  <div class="kutu">div (blok)</div>
+  <span class="kutu">span (satır içi)</span>
+  <div class="kutu" id="ozel">id ile seçilen kutu</div>
+
+  -- IFRAME --
+  <h3>iframe</h3>
+  <iframe src="https://www.example.com" title="Örnek" width="320" height="140"></iframe>
+
+  -- JAVASCRIPT (çok basit) --
+  <h3>JavaScript</h3>
+  <button onclick="alert('Merhaba')">Tıkla</button>
+
+  -- DÜZEN / DUYARLI --
+  <h3>Sayfa Düzeni</h3>
+  <header>Üst alan</header>
+  <nav>Menü</nav>
+  <main>
+    <section>
+      <h4>Konu</h4>
+      <article>Bu bir makale.</article>
+    </section>
+    <aside>Kenar bilgi</aside>
+  </main>
+  <footer>Alt bilgi</footer>
+
+  -- HTML ve XHTML --
+  <h3>HTML ve XHTML</h3>
+  <p>XHTML daha katıdır, HTML daha esnektir.</p>
+
+  -- FORMLAR (temel ve nitelikler) --
+  <h3>Formlar</h3>
+  <form action="#" method="get" autocomplete="on" novalidate>
+    <label>İsim: <input type="text" name="isim" placeholder="Ad" required></label><br><br>
+    <label>E-posta: <input type="email" name="mail" autocomplete="email"></label><br><br>
+    <label>Şifre: <input type="password" name="sifre" maxlength="8"></label><br><br>
+    <label>Tarih: <input type="date" name="tarih"></label><br><br>
+    <label>Sayı: <input type="number" min="0" max="10"></label><br><br>
+    <label>Şehir:
+      <select name="sehir">
+        <option>İstanbul</option>
+        <option>Ankara</option>
+        <option>İzmir</option>
+      </select>
+    </label><br><br>
+    <textarea name="mesaj" rows="3" cols="30" placeholder="Mesaj"></textarea><br><br>
+    <label><input type="checkbox" name="onay"> Onaylıyorum</label>
+    <label><input type="radio" name="cinsiyet" value="erkek"> Erkek</label>
+    <label><input type="radio" name="cinsiyet" value="kadın"> Kadın</label><br><br>
+    <button type="submit">Gönder</button>
+  </form>
+
+  -- GRAFİKLER --
+  <h3>Canvas</h3>
+  <canvas id="c" width="200" height="100" style="border:1px solid #000"></canvas>
+  <script>
+    var c = document.getElementById('c');
+    var x = c.getContext('2d');
+    x.fillRect(10, 10, 50, 50);
+  </script>
+
+  <h3>SVG</h3>
+  <svg width="120" height="80">
+    <circle cx="40" cy="40" r="30" stroke="black" fill="none"></circle>
+  </svg>
+
+  -- MEDYA --
+  <h3>Video</h3>
+  <video width="260" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  </video>
+
+  <h3>Ses</h3>
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+  </audio>
+
+  <h3>Eklenti</h3>
+  <embed src="https://www.w3schools.com/images/w3schools_green.jpg" width="200" height="60">
+
+  <h3>YouTube</h3>
+  <iframe width="320" height="180"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Video" allowfullscreen></iframe>
+
+</body>
+</html>
