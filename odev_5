@@ -9,7 +9,7 @@
   <style>
     body {
       min-height: 100vh;
-      background-color: #045c64; /* Ana arka plan rengi (daha koyu teal/mavi) */
+      background-color: #045c64; 
       font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
     }
 
