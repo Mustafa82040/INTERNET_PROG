@@ -18,7 +18,7 @@
     }
 
     .navbar {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 2px 4px rgba(22, 173, 199, 0.08);
     }
 
     .my-navbar {
@@ -149,7 +149,6 @@
             Aşağıdaki kareler; geçmişten kalan, küçük ama anlamlı anıları temsil eden örnek fotoğraflardır.
           </p>
           <p>
-            <a href="#album" class="btn btn-primary my-2">Anıları Gör</a>
             <button type="button" class="btn btn-outline-light my-2">
               Yeni Anı Ekle
             </button>
@@ -264,7 +263,7 @@
                 <p class="card-text">
                   Bir gölün sessizliği, kalabalık bir şehrin gürültüsünden daha çok şey söyler.
                 </p>
-                <div class="d-flex justify-content_between align-items-center">
+                <div class="d-flex justify_content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
@@ -376,7 +375,5 @@
       <p class="mb-1">Bu sayfa, Bootstrap albüm örneği temel alınarak sadeleştirilmiştir.</p>
     </div>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
